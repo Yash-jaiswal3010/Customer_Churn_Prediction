@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Churn Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="futuristic-container">
+        <h1 class="page-title">Customer Churn Prediction</h1>
+
+        <form action="http://localhost:5000/" method="POST">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>SeniorCitizen:</label>
+                    <textarea class="input-box" name="query1">{{ query1 }}</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>MonthlyCharges:</label>
+                    <textarea class="input-box" name="query2">{{ query2 }}</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>TotalCharges:</label>
+                    <textarea class="input-box" name="query3">{{ query3 }}</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <textarea class="input-box" name="query4">{{ query4 }}</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Partner:</label>
+                    <textarea class="input-box" name="query5">{{ query5 }}</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Dependents:</label>
+                    <textarea class="input-box" name="query6">{{ query6 }}</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>PhoneService:</label>
+                    <textarea class="input-box" name="query7">{{ query7 }}</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>MultipleLines:</label>
+                    <textarea class="input-box" name="query8">{{ query8 }}</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>InternetService:</label>
+                    <textarea class="input-box" name="query9">{{ query9 }}</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>OnlineSecurity:</label>
+                    <textarea class="input-box" name="query10">{{ query10 }}</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>OnlineBackup:</label>
+                    <textarea class="input-box" name="query11">{{ query11 }}</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>DeviceProtection:</label>
+                    <textarea class="input-box" name="query12">{{ query12 }}</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>TechSupport:</label>
+                    <textarea class="input-box" name="query13">{{ query13 }}</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>StreamingTV:</label>
+                    <textarea class="input-box" name="query14">{{ query14 }}</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>StreamingMovies:</label>
+                    <textarea class="input-box" name="query15">{{ query15 }}</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Contract:</label>
+                    <textarea class="input-box" name="query16">{{ query16 }}</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>PaperlessBilling:</label>
+                    <textarea class="input-box" name="query17">{{ query17 }}</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>PaymentMethod:</label>
+                    <textarea class="input-box" name="query18">{{ query18 }}</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Tenure:</label>
+                    <textarea class="input-box" name="query19">{{ query19 }}</textarea>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Predict</button>
+        </form>
+
+        {% if output1 %}
+        <div class="output-section">
+            <h2 class="output-title">Prediction Result</h2>
+            <div class="output-box">{{ output1 }}</div>
+            <div class="output-box">{{ output2 }}</div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

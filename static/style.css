@@ -1,0 +1,155 @@
+/* === CUSTOMER CHURN PREDICTION - PREMIUM DASHBOARD STYLE === */
+
+body {
+  background: radial-gradient(circle at top left, #0b132b, #1c2541, #3a506b);
+  font-family: 'Poppins', sans-serif;
+  color: #e0e0e0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.futuristic-container {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  padding: 40px 50px;
+  width: 90%;
+  max-width: 1150px;
+  box-shadow: 0 0 50px rgba(0, 255, 255, 0.2);
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00f7ff;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  text-shadow: 0 0 20px #00ffff;
+  letter-spacing: 2px;
+}
+
+/* === FORM GRID === */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px 40px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 15px 20px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.form-group:hover {
+  border: 1px solid rgba(0, 255, 255, 0.4);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #a8e6ff;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.input-box {
+  resize: none;
+  height: 45px;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 0.95rem;
+  transition: 0.3s ease;
+}
+
+.input-box:focus {
+  outline: none;
+  background: rgba(0, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* === SUBMIT BUTTON === */
+.submit-btn {
+  display: block;
+  width: 50%;
+  margin: 50px auto 0;
+  background: linear-gradient(135deg, #00ffff, #0077ff);
+  border: none;
+  border-radius: 40px;
+  color: white;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
+}
+
+/* === OUTPUT SECTION === */
+.output-section {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.output-title {
+  color: #00f7ff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+.output-box {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 10px;
+  color: #00ffff;
+  width: 80%;
+  max-width: 600px;
+  margin: 10px auto;
+  font-size: 1rem;
+  padding: 10px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.output-box:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+/* === ANIMATION === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === SCROLLBAR === */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #00ffff;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
